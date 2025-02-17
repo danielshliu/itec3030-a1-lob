@@ -12,7 +12,6 @@ package ca.yorku.cmg.lob.exchange;
 import ca.yorku.cmg.lob.trader.Trader;
 import ca.yorku.cmg.lob.tradestandards.ITrade;
 
-
 /**
  * Abstract class representing a financial account associated with a {@linkplain ca.yorku.cmg.lob.trader.Trader}.
  * Manages the account's balance, fee application, and positions in a {@linkplain ca.yorku.cmg.lob.exchange.PositionBook}.
@@ -113,6 +112,7 @@ public abstract class Account {
      * @return the quantity of the position (number of units) 
      */
     public int getPosition(String tkr) {
+
         return this.book.getPosition(tkr);
     }
 
